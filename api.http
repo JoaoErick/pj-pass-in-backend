@@ -1,0 +1,38 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 1,
+  "details": null,
+  "maximumAttendees": 5
+}
+
+###
+
+POST http://localhost:3333/events/88006494-2763-422d-83e3-004fb62af96b/attendees
+Content-Type: application/json
+
+{
+  "name": "Erick Barbosa",
+  "email": "joaoerickbarbosa2@email.com"
+}
+
+###
+
+GET http://localhost:3333/events/88006494-2763-422d-83e3-004fb62af96b
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/88006494-2763-422d-83e3-004fb62af96b/attendees
+
+###
+
+GET http://localhost:3333/events/88006494-2763-422d-83e3-004fb62af96b/attendees?query=Erick
