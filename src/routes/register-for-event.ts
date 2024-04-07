@@ -38,7 +38,7 @@ export async function registerForEvent(app: FastifyInstance) {
       })
 
       if (attendeeFromEmail !== null) {
-        throw new BadRequest('This e-mail is already registeres for this event.')
+        throw new BadRequest('This e-mail is already registered for this event.')
       }
 
       // Executar as consultas no banco de dados em paralelo
